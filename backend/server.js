@@ -18,7 +18,7 @@ const app = express();
 // Security middleware
 app.use(helmet());
 const limiter = rateLimit({
-  windowMs: 5 * 60 * 1000, // it was 15 minute and I chnage it to 5
+  windowMs: 1 * 60 * 1000, // it was 15 minute and I chnage it to 5
   max: 1000,
 });
 app.use(limiter);
